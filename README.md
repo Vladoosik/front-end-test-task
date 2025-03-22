@@ -1,110 +1,100 @@
 # Coralsoft Test Task
 
-## Setup
+## 📌 Project Overview
+This project is a test assignment for Coralsoft, built using modern front-end technologies. The application includes a Sign-In page (without a backend) and a Home Page (Dashboard) that visualizes cat breed data from TheCatAPI.
 
-```bash
+## 🚀 Setup & Installation
+To run the project locally, follow these steps:
+
+```sh
+# Install dependencies
 npm install
+
+# Start the development server
 npm run dev
 ```
 
-## Tech Stack
+## 🛠️ Tech Stack
+The project is built using the following technologies:
+- **React** – Component-based UI development
+- **Redux Toolkit** – State management
+- **RTK Query** – API data fetching
+- **React Router** – Navigation
+- **Recharts** – Data visualization
+- **Preline UI** – UI components
+- **Tailwind CSS** – Styling
+- **TypeScript** – Static typing
+- **Vite** – Fast development build tool
 
-- React
-- Redux Toolkit
-- RTK Query
-- React Router
-- Recharts
-- Preline UI
-- Tailwind CSS
-- TypeScript
-- Vite
+## ✨ Features
+- **Sign-In Page** (with validation, fake authentication)
+- **Dashboard Page** (data visualization & filtering)
+- **Charts & Graphs** for cat breed data
+- **Sorting & Filtering** using Preline UI
+- **Responsive UI** with Tailwind CSS
+- **Deployed on Vercel**
 
-## Features
+## 📌 Prerequisites
+- The app must use **Redux Toolkit, RTK Query, TypeScript, React Router, Recharts, Preline UI, Tailwind CSS, and Vite**.
+- You are free to modify or add files for better code organization.
+- Any validation-related package can be used.
 
-- Sign In (without a backend)
-- Home Page (Dashboard)
+## 📋 Requirements
+### 🔹 Sign-In Page
+- Validate email format.
+- Fake authentication with:
+  - **Email:** `test@test.test`
+  - **Password:** `password`
+  - If incorrect, show a "User not found" error.
+- Show error messages for invalid input.
+- Implement a loading state.
 
-## Prerequisites
+### 🔹 Dashboard Page
+- Integrate **TheCatAPI** `/breeds` endpoint.
+- Fetch and display breed data in a **grid** with:
+  - Name
+  - Origin
+  - Description
+  - Adaptability
+  - Affection Level
+  - Life Span
+- Implement **sorting & filtering** (criteria up to you).
+- **Data Visualization:**
+  - Display charts using **Recharts**.
+  - Fix existing visualizations if needed.
 
-- You may install any validation-related packages.
-- You must use Redux Toolkit, RTK Query, TypeScript, React Router, Recharts, Preline UI, Tailwind CSS, and Vite.
-- You are free to modify or add files to the project (decoupling files where necessary is encouraged).
+## 🌍 Deployment
+The app is hosted on **Vercel**.
 
-## Requirements
-
-- Refactor the app code using best practices in React, TypeScript, Redux Toolkit, and RTK Query.
-- **Sign-In Page**
-  - Implement email and password validation:
-    - The email must be in a valid format.
-    - In the fake backend, the email must be `test@test.test` and the password must be `password`. Otherwise, return a "User not found" error.
-  - Display error messages for invalid inputs.
-  - Implement a loading state.
-- **Dashboard Page**
-  - Integrate TheCatAPI's `/breeds` endpoint in `catsService`.
-    - Follow this [link](https://developers.thecatapi.com/view-account/ylX4blBYT9FaoVd6OhvR?report=aZyiLrsCh#tag/Breeds/paths/~1breeds/get)
-    - In the left sidebar, click on `OpenAPI Spec Doc` and then click on `Breeds`.
-    - Use `/breeds` endpoint to get the data.
-  - Implement charts for data visualization (fixing the existing ones if necessary).
-  - Display a grid of cat information, including:
-    - Name
-    - Origin
-    - Description
-    - Adaptability
-    - Affection Level
-    - Life Span
-  - Implement sorting and filtering using Preline UI (sorting and filtering parameters are up to you).
-- **Hosting**
-  - Host the app on Vercel or any other free hosting service.
-
-## Additional Requirements (Optional but Recommended)
-
-- Implement a dark theme.
-
-## Evaluation Criteria
-
-### Requirements Implementation
-
-- All core features are implemented correctly.
-- API integration works as expected.
+## ✅ Evaluation Criteria
+### 🔹 Functionality
+- API integration works correctly.
 - Validation logic functions properly.
 
-### Code Architecture & Organization
+### 🔹 Code Structure & Best Practices
+- Modular and well-organized components.
+- Efficient state management with Redux Toolkit.
+- Proper error handling.
 
-- Clear separation of concerns.
-- Modular component structure.
-- Proper state management with Redux.
-- Efficient API handling with RTK Query.
-- Well-organized file and folder structure.
-
-### TypeScript Usage
-
-- Proper type definitions.
-- Type safety across components.
-- Minimal use of the `any` type.
+### 🔹 TypeScript Usage
+- Strong type definitions.
+- Minimal use of `any`.
 - Consistent typing patterns.
 
-### React Best Practices
+### 🔹 Performance & Optimization
+- Avoid unnecessary re-renders.
+- Efficient API data fetching.
 
-- Functional components with hooks.
-- Proper component composition.
-- Efficient re-rendering strategies.
-- Avoiding excessive prop drilling.
+### 🔹 Code Quality
+- Clean, readable, and maintainable code.
+- Adheres to **DRY** (Don't Repeat Yourself) principles.
 
-### Performance Optimization
+## 📌 Conclusion
+This project demonstrates modern React development practices, including **state management, API integration, data visualization, and UI design**. The focus is on **maintainability, performance, and usability**.
 
-- Minimal unnecessary re-renders.
-- Proper use of memoization.
-- Efficient data fetching.
+Feel free to improve or expand upon the features! 🚀
 
-### Code Quality
 
-- Clean and readable code.
-- Consistent naming conventions.
-- Proper error handling.
-- Comments where necessary.
-- Adherence to DRY (Don't Repeat Yourself) principles.
-
-### Testing & Maintainability
 
 - Unit test coverage.
 - Easy to extend and modify.
