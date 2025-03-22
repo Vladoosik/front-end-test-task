@@ -22,7 +22,11 @@ const HomePage = (): JSX.Element => {
     data: cats = [],
     isLoading,
     error,
-  } = (useGetBreedsQuery() as { data: CatModel[] }) || { data: [] };
+  } = (useGetBreedsQuery() as {
+    data: CatModel[];
+    isLoading: boolean;
+    error?: string;
+  }) || { data: [] };
 
   const [adaptabilityData, setAdaptabilityData] = useState<DataItem[]>([]);
   const [affectionData, setAffectionData] = useState<DataItem[]>([]);

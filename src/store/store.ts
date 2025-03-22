@@ -8,8 +8,7 @@ export const store = configureStore({
     [catsApi.reducerPath]: catsApi.reducer as any,
     auth: authReducer,
   },
-  middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(catsApi.middleware),
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat([]),
 });
 
 export type RootState = ReturnType<typeof store.getState>;
