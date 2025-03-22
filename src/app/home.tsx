@@ -18,15 +18,7 @@ const HomePage = (): JSX.Element => {
   const isAuthenticated: boolean = useAppSelector(
     (state: RootState) => state.auth.isAuthenticated,
   );
-  const {
-    data: cats = [],
-    isLoading,
-    error,
-  } = (useGetBreedsQuery() as {
-    data: CatModel[];
-    isLoading: boolean;
-    error?: string;
-  }) || { data: [] };
+  const { data: cats = [], isLoading, error } = useGetBreedsQuery(undefined);
 
   const [adaptabilityData, setAdaptabilityData] = useState<DataItem[]>([]);
   const [affectionData, setAffectionData] = useState<DataItem[]>([]);
