@@ -3,7 +3,7 @@ import HomePage from "./app/home";
 import StoreProvider from "./components/storeProvider.tsx";
 import UiProvider from "./components/uiProvider.tsx";
 import SignInPage from "./app/signIn";
-import React, { JSX, ReactNode } from "react";
+import { JSX, ReactNode } from "react";
 
 const App = (): JSX.Element => {
   return (

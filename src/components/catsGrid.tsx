@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import { memo } from "react";
 import { CatModel } from "../../types/catModel.ts";
 
 const CatsGrid = ({ cats }: { cats: CatModel[] }) => {

@@ -1,4 +1,4 @@
-import React from "react";
+import { memo } from "react";
 import {
   Cell,
   Legend,
@@ -44,4 +44,4 @@ const TopOrigins = ({ originData }: { originData: DataItem[] }) => {
   );
 };
 
-export default TopOrigins;
+export default memo(TopOrigins);
