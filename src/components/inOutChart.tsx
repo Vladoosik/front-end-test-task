@@ -29,7 +29,7 @@ const InOutChart = ({ indoorData }: { indoorData: DataItem[] }) => {
               label
             >
               <>
-                {indoorData.map((item: DataItem, index: number) => (
+                {indoorData.map((_: DataItem, index: number) => (
                   <Cell
                     key={`cell-${index}`}
                     fill={COLORS[index % COLORS.length]}

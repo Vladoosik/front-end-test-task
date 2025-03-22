@@ -27,7 +27,7 @@ const LapCatDistribution = ({ lapData }: { lapData: DataItem[] }) => {
               label
             >
               <>
-                {lapData.map((item: DataItem, index: number) => (
+                {lapData.map((_: DataItem, index: number) => (
                   <Cell
                     key={`cell-${index}`}
                     fill={COLORS[index % COLORS.length]}
